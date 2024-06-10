@@ -7,7 +7,7 @@
 
 Author: [Tanmay Dewangan]() [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/)
 
-Advisor: [Tyson Lee Swetnam](https://tyson-swetnam.github.io/) [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](http://orcid.org/0000-0002-6639-7181)
+Advisor: [Nirav Merchant](https://tyson-swetnam.github.io/) [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](http://orcid.org/0000-0002-6639-7181)
 
 ## About
 
