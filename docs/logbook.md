@@ -38,3 +38,18 @@ Today, I set up my OpenAI account so that I could practice prompt engineering. I
 [Here](prompt_engineering_examples.md) are some examples that I created.
 
 I also explored the CKAN deployment for CyVerse within an example organization. I learned how to create a dataset and how to add metadata to it. Additionally, I worked on my project description and the layout of my poster.
+
+### Day 7 (6/11/24)
+
+I manually transferred existing datasets from the curated data commons to the CKAN deployment to get a feel of how the datasets are structured. 
+
+I also learned how to use the CKAN API to automate the process of transferring datasets. I created several different functions in Python that interact with the CKAN API to create/delete datasets, add resources, create organizations, and get dataset information. 
+These functions were created with the help of [ChatGPT Prompt Engineering](ckan_api_testing_prompts.md) and using the [CKAN API documentation](https://docs.ckan.org/en/2.10/api/index.html).
+These functions can be found [here](ckan_api_testing.md).
+
+In the next few days, I plan to get familiar with the API for the existing data commons so that in the future I can automate the process of transferring datasets from the existing data commons to the CKAN deployment.
+
+
+
+
+

@@ -30,6 +30,11 @@ nav:
   - Resources:
     - GitHub: github.md
     - Prompt Engineering: promptengineering.md
+  - Documentation:
+      - Prompt Engineering:
+          - Practice: prompt_engineering_examples.md
+          - CKAN API Testing Prompts: ckan_api_testing_prompts.md
+      - CKAN API Testing Scripts: ckan_api_testing.md
 
 # Configuration
 theme:
