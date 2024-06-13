@@ -34,6 +34,7 @@ nav:
       - Prompt Engineering:
           - Practice: prompt_engineering_examples.md
           - CKAN API Testing Prompts: ckan_api_testing_prompts.md
+          - Discovery Environment API Prompts: discovery_environment_api_prompts.md
       - CKAN API Testing Scripts: ckan_api_testing.md
 
 # Configuration

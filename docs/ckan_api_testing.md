@@ -1,3 +1,7 @@
+# CKAN API Testing Scripts
+
+Note: These examples are from Day 7 (6/11/24) of the [logbook](logbook.md).
+
 ## Initial Setup
 
 ```python
