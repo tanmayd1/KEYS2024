@@ -1,6 +1,6 @@
 # CKAN API Testing Prompts
 
-Note: These examples are from Day 7 (6/11/24) of the [logbook](logbook.md).
+Note: These prompts are from Day 7 (6/11/24) of the [logbook](logbook.md).
 
 **System Instructions:**
 
@@ -106,4 +106,4 @@ Make sure to include comments in the script to explain what each part of the cod
 **Response:**
 > *(Not Shown Here)*
 
-Can be found in the [CKAN API Testing Scripts](ckan_api_testing.md).
+Can be found in the [CKAN API Testing Scripts](ckan_api_testing_scripts).

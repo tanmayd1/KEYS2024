@@ -45,7 +45,7 @@ I manually transferred existing datasets from the curated data commons to the CK
 
 I also learned how to use the CKAN API to automate the process of transferring datasets. I created several different functions in Python that interact with the CKAN API to create/delete datasets, add resources, create organizations, and get dataset information. 
 These functions were created with the help of [ChatGPT Prompt Engineering](ckan_api_testing_prompts.md) and using the [CKAN API documentation](https://docs.ckan.org/en/2.10/api/index.html).
-These functions can be found [here](ckan_api_testing.md).
+These functions can be found [here](ckan_api_testing_scripts).
 One obstacle that I encountered was that I didn't exactly know how to create some functions like the get_dataset_id function. To solve this, I used prompt engineering to ask ChatGPT to help me create the function. 
 Another obstacle was that the get_dataset_id function that was provided to me by ChatGPT wasn't working at first and it was saying that the dataset was not found. 
 After asking ChatGPT for help, I realized that the dataset name has to be in all lowercase and has to have hyphens instead of spaces.
@@ -68,5 +68,13 @@ Below are some of the endpoints that will be important for me to use:
 * GET /terrain/secured/filesystem/{data-id}/metadata: Get the metadata for a specific directory using its id
 
 
+### Day 9 (6/13/24)
 
+I started creating python functions that interact with the Discovery Environment API. 
+I used the endpoints that I found yesterday to create these functions.
+During the standup meeting, I was told to determine if any of the datasets have ARK permanent identifiers so using the functions that I created, I was able to find that there were 17 of the datasets that had ARK permanent identifiers.
+The process of migrating these datasets to the CKAN deployment will be slightly different so it is important to know which datasets have ARK permanent identifiers.
+Lastly, I was working on getting the metadata for the datasets and files so that I could store it in an organized manner.
+This will make it easier when I am creating the datasets in the CKAN deployment.
 
+The Python code that I created can be found [here](de_api_testing_scripts.md).

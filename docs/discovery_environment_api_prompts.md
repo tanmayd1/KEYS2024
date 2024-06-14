@@ -1,6 +1,6 @@
 # Discovery Environment API Prompts
 
-Note: These examples are from Day 8 (6/12/24) of the [logbook](logbook.md).
+Note: These prompts are from Day 8 (6/12/24) of the [logbook](logbook.md).
 
 ---
 
