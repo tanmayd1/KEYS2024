@@ -1,2 +1,2 @@
-## Assignment 3: Materials and Methods 
+# Assignment 3: Materials and Methods 
 

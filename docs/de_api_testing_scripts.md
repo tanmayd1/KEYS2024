@@ -141,7 +141,7 @@ def get_all_metadata_file(file):
 
     return metadata_dict
 
-def get_list_of_files(path, limit=10):
+def get_files(path, limit=10):
     """
     Get the list of files in a specified directory.
 
@@ -164,7 +164,7 @@ def get_list_of_files(path, limit=10):
         print(f"Error getting files: {response.status_code} - {response.text}")
         return None
 
-def get_datasets_metadata():
+def get_datasets():
     """
     Get a list of all datasets with their metadata.
 
@@ -180,17 +180,7 @@ def get_datasets_metadata():
 
         # This variable is now a list of dictionaries where each dictionary represents a single dataset
         datasets = directories['folders']
-
-        datasets_metadata = []
-
-        # Get metadata for each dataset
-        for dataset in datasets:
-            metadata = get_all_metadata_dataset(dataset)
-            datasets_metadata.append(metadata)
-            pretty_print(metadata)
-            print("\n")
-
-        return datasets_metadata
+        return datasets
     else:
         print(f"Error getting directories: {response.status_code} - {response.text}")
         return None

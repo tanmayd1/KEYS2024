@@ -206,6 +206,45 @@ dataset_id = get_dataset_id(dataset_name)
 resource_response = upload_resource(dataset_id, file_path='example.csv', resource_name='Example Resource')
 ```
 
+## Add a resource using a link
+
+```python
+def add_resource_link(dataset_id, url, name, format, date_created_de, date_modified_de, description=None):
+    """
+    Add a link to a resource in a CKAN dataset.
+
+    Parameters:
+    dataset_id (str): The ID of the dataset to add the resource to.
+    url (str): The URL of the resource.
+    name (str): The name of the resource.
+    description (str, optional): A description of the resource.
+
+    Returns:
+    dict: The response from the CKAN API.
+    """
+    resource_url = f'{ckan_url}/api/3/action/resource_create'
+    headers = {
+        'Authorization': api_key
+    }
+    data = {
+        'package_id': dataset_id,
+        'name': name,
+        'description': description,
+        'url': url,
+        'format': format,  # or any other format that your link represents
+        'Date Created in Discovery Environment': date_created_de,
+        'Date Last Modified in Discovery Environment': date_modified_de
+    }
+    response = requests.post(resource_url, headers=headers, json=data)
+    return response.json()
+
+# Example usage
+dataset_name = 'My Dataset'
+dataset_id = get_dataset_id(dataset_name)
+resource_response = upload_resource(dataset_id, url="www.example.com", name='example', format='HTML', 
+                                    date_created_de='2024-06-11', date_modified_de='2024-06-11', description='Example resource')
+```
+
 ## Get dataset information
 
 ```python

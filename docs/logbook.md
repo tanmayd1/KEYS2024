@@ -78,3 +78,26 @@ Lastly, I was working on getting the metadata for the datasets and files so that
 This will make it easier when I am creating the datasets in the CKAN deployment.
 
 The Python code that I created can be found [here](de_api_testing_scripts.md).
+
+### Day 10 (6/14/24)
+
+To start off the day, I revised the functions that I created in the past few days and mentally mapped out the process of transferring datasets from the existing data commons to the CKAN deployment.
+When I was doing this, I realized that there was no way to edit the modified date and the created date of CKAN folders so upon asking my lab mentors, it was determined that I would not map the modified date and the created date of the datasets to the CKAN deployment.
+Furthermore, I also realized that there wasn't a field for the modified and created dates for the resources in the CKAN deployment. 
+However, I realized that I could add custom fields to the resources which is what I will be doing.
+
+I then started creating the script that will automate the process of transferring datasets from the existing data commons to the CKAN deployment.
+I was first having difficulty figuring out how to map the license metadata because the exact name of the license is different even though they refer to the same license.
+To solve this, I had to create sample datasets in the CKAN deployment and then use the functions I created to see the metadata that was returned. 
+The metadata showed that I had to create three new fields depending on the type of license so that it would properly show up in the CKAN deployment.
+
+Another issue I had was that the subject metadata in the existing data commons was either a single string or a list of strings there were errors when I was trying to map them to the tags in the CKAN deployment.
+Therefore, I had to first check if the subject metadata was a list and then iterate through the list to add each subject as a tag.
+
+Another issue I was encountering was that some of the metadata keys were under different names but referred to the same thing such as the title, author name, etc.
+Some of the datasets had "datacite." in front of the keys so I was working on adjusting the script to handle this. 
+However, I am not done with this and will need to finish it on Monday.
+
+In addition, I still need to start working on the part of the script that will map the resources of the datasets.
+
+
