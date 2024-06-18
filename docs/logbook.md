@@ -101,3 +101,17 @@ However, I am not done with this and will need to finish it on Monday.
 In addition, I still need to start working on the part of the script that will map the resources of the datasets.
 
 
+### Day 11 (6/17/24)
+
+I finished the migration script that will automate the process of transferring datasets from the existing data commons to the CKAN deployment that I was working on last Friday.
+Something that took a considerable amount of time was creating the citations for the datasets because that metadata wasn't available in the existing data commons.
+I had to manually create a function that would create the citation for the datasets based on the metadata.
+However, I realized that some of the fields for the citation like the creator, title, publication year, etc. were stored slightly differently in the existing data commons so I had to adjust the function to handle this.
+
+I was also having some trouble with deciding how I would make the script idempotent meaning that the script won't add anything to CKAN that is already present, but it will update information that has changed.
+Specifically, I wasn't sure how I would update any changes to the CKAN dataset that were made to the datasets in the existing data commons.
+I then realized that I could use the date modified field in the existing data commons to check if the dataset has been modified and then update the dataset in the CKAN deployment by deleting the dataset and then creating it again with the new metadata.
+This would make it easier to update the datasets in the CKAN deployment rather than having to manually check each metadata field and resource for changes.
+
+The migration script that I created can be found [here](migration_script.md).
+The entire code so far can also be found on GitHub [here](https://github.com/cyverse/data-commons).

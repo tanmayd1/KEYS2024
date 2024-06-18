@@ -37,6 +37,7 @@ nav:
           - Discovery Environment API Prompts: discovery_environment_api_prompts.md
       - CKAN API Testing Scripts: ckan_api_testing_scripts.md
       - Discovery Environment API Testing Scripts: de_api_testing_scripts.md
+      - Migration Script: migration_script.md
 
 # Configuration
 theme:
