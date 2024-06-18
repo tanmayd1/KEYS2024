@@ -10,16 +10,20 @@ import json
 from datetime import datetime
 
 # Base URL for the Discovery Environment API
+# This is the main endpoint for accessing the Discovery Environment API, which provides various services
+# like metadata retrieval, file management, and more.
 base_url = 'https://de.cyverse.org/terrain'
 
 # API Key (replace with your actual API key)
+# The API key is used for authentication when making requests to the Discovery Environment API.
+# Replace 'YOUR_API_KEY' with your actual API key to access the API services.
 api_key = 'Bearer " + 'YOUR_API_KEY'
 
 # Headers for the requests
+# These headers include the API key and are required for making authorized requests to the API.
 headers = {
     'Authorization': api_key
 }
-```
 
 ---
 

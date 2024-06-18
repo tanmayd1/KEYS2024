@@ -10,9 +10,13 @@ import requests
 import json
 
 # Set the URL for the CKAN API
+# This is the main endpoint for accessing the CKAN API, which provides services like dataset creation,
+# resource management, and more.
 ckan_url = 'https://ckan.cyverse.rocks/'
 
 # Set the API key for the CKAN API
+# The API key is used for authentication when making requests to the CKAN API.
+# Replace 'API_KEY' with your actual API key to access the API services.
 api_key = 'API_KEY'
 ```
 
