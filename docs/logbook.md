@@ -115,3 +115,22 @@ This would make it easier to update the datasets in the CKAN deployment rather t
 
 The migration script that I created can be found [here](migration_script.md).
 The entire code so far can also be found on GitHub [here](https://github.com/cyverse/data-commons).
+
+### Day 12 (6/18/24)
+
+I started running the script that I created to transfer the datasets from the existing data commons to the CKAN deployment.
+While running the script, there were several problems that came up:
+
+1. My function to get the details of all the datasets in CKAN was only returning the first 10 datasets. 
+I couldn't exactly figure out the problem by myself so I asked ChatGPT for help. I told it what the problem was and it gave me a solution that I could use to fix the problem.
+However, the solution that ChatGPT gave me didn't work so I had to ask ChatGPT for help again. This happened a few times until it finally gave me a solution that worked.
+2. There were two datasets that had the same title despite it having different metadata so my script was throwing an error. 
+I asked Tony Edgin and Michele Cosi for help, and they fixed the title in the existing data commons so that the script would run without any errors.
+3. Some of the titles were longer than 100 characters and the CKAN API wasn't letting me create a dataset whose name was longer than 100 characters.
+I asked Tony Edgin for help and he told me to just truncate the name to 100 characters. The title of the dataset is different from the name of the dataset so it was okay to truncate the name.
+4. There is a dataset with no metadata in the existing data commons. I asked my lab mentors for help but I am still waiting on a reply from Dr. Merchant.
+5. There are several datasets with many files and the script was taking a long time to run for these datasets.
+Therefore, I skipped these datasets for now and I will ask my lab mentors for help on how to handle these datasets.
+
+There were other minor errors that I encountered, mostly dealing with characters that weren't allowed in the name of the dataset or the tags.
+These were quite easy to fix and I just had to add a bit of code to replace those characters with something else.
