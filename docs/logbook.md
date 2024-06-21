@@ -134,3 +134,13 @@ Therefore, I skipped these datasets for now and I will ask my lab mentors for he
 
 There were other minor errors that I encountered, mostly dealing with characters that weren't allowed in the name of the dataset or the tags.
 These were quite easy to fix and I just had to add a bit of code to replace those characters with something else.
+
+### Day 13 (6/19/24)
+
+In the morning, I attended the weekly science seminar and learned more about science literacy and attended lectures by Dr. Chris Frost.
+After the seminar, I attended the standup meeting with Tony Edgin and Dr. Swetnam. 
+I told them about how it was taking a long time to run the script for datasets with many files and they showed me how to run the script in a Ubuntu VM that was hosted on CyVerse.
+This would allow me to easily run the script for datasets with many files because the VM had more resources than my local machine.
+This script is still running and I will check on it tomorrow.
+I also looked into flake8 which is a tool that checks for style errors in Python code, as suggested by Tony.
+Lastly, I looked into some documentation and resources for Gradio provided by Dr. Merchant.
