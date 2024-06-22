@@ -144,3 +144,11 @@ This would allow me to easily run the script for datasets with many files becaus
 This script is still running and I will check on it tomorrow.
 I also looked into flake8 which is a tool that checks for style errors in Python code, as suggested by Tony.
 Lastly, I looked into some documentation and resources for Gradio provided by Dr. Merchant.
+
+### Day 14 (6/20/24)
+
+I checked on the script that was running in the Ubuntu VM and it is still running. 
+I finished the script that would take in command line arguments and run the migration script for a specific dataset.
+The arguments that the script would take in are the dataset name, the organization name, and the username and password for CyVerse in order to generate the API key.
+
+I also started creating a cron job on the ubuntu VM that would run the migration script everyday at 5:00 PM.
