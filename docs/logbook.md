@@ -135,7 +135,7 @@ Therefore, I skipped these datasets for now and I will ask my lab mentors for he
 There were other minor errors that I encountered, mostly dealing with characters that weren't allowed in the name of the dataset or the tags.
 These were quite easy to fix and I just had to add a bit of code to replace those characters with something else.
 
-### Day 13 (6/19/24)
+### Day 13 (6/20/24)
 
 In the morning, I attended the weekly science seminar and learned more about science literacy and attended lectures by Dr. Chris Frost.
 After the seminar, I attended the standup meeting with Tony Edgin and Dr. Swetnam. 
@@ -145,7 +145,7 @@ This script is still running and I will check on it tomorrow.
 I also looked into flake8 which is a tool that checks for style errors in Python code, as suggested by Tony.
 Lastly, I looked into some documentation and resources for Gradio provided by Dr. Merchant.
 
-### Day 14 (6/20/24)
+### Day 14 (6/21/24)
 
 I checked on the script that was running in the Ubuntu VM and it is still running. 
 I finished the script that would take in command line arguments and run the migration script for a specific dataset.
@@ -154,3 +154,22 @@ The arguments that the script would take in are the dataset name, the organizati
 I also created a cron job on the CKAN host so that the script would run every day at 5:00 PM.
 
 Lastly, I finished the Materials and Methods section which can be found [here](assignment3.md).
+
+### Day 15 (6/24/24)
+
+I checked on the script that was running in the Ubuntu VM again and there were errors that were thrown.
+I wasn't exactly sure what the error meant but when I reran the script I realized that the API key that I was using had expired.
+In order to solve this, I created a test account on CyVerse and created a function that would generate the API key using the username and password of the test account.
+Every time that the script runs, it will generate a new API key so that it hopefully doesn't expire while the script is running.
+
+Additionally, when I reran the script for the second time, I realized that something was wrong with the part of the script that was checking the last modified dates in the Discovery Environment API and CKAN because the CKAN dates were exactly 7 hours ahead of the Discovery Environment dates.
+However, when the datasets were originally created, the dates were the same so I am not exactly sure why the dates are different now.
+Until I figure out why the dates are different, I temporarily check if the last modified date in the Discovery Environment API is exactly 7 hours behind the last modified date in CKAN and if it is, I don't update the dataset in CKAN.
+
+Furthermore, I realized that some of the datasets hadn't transferred all of their files to the CKAN deployment so I wrote a function that would check if all of the files in the dataset were transferred and if they weren't, it would transfer the files that weren't transferred.
+
+I started working on figuring out how to disable the ability of regular users to create CKAN organizations but I couldn't figure out how to access the configuration file in the CKAN deployment to do this.
+I will ask Tony for help in the standup meeting tomorrow.
+
+While I was working on that, Tony got back to me about things that I should change in my migration script. 
+I spent the rest of the day working on that but I have still not finished it.
