@@ -173,3 +173,15 @@ I will ask Tony for help in the standup meeting tomorrow.
 
 While I was working on that, Tony got back to me about things that I should change in my migration script. 
 I spent the rest of the day working on that but I have still not finished it.
+
+### Day 16 (6/25/24)
+
+At the beginning of the day, I continued working on the changes that Tony suggested for the migration script.
+In the middle of the day, I had a meeting with Dr. Merchant and Tony to discuss the progress of the project as well as future directions.
+We discussed the involvement of gradio in the project and how it could be used to create a user interface for the project which would ensure that the metadata that a user inputs is correct.
+We also discussed how something called croissant could be integrated with gradio. 
+Croissant is a metadata format for standardizing machine learning datasets.
+Apart from this, we talked about Amazon buckets which would allow to store vast amounts of data in an efficient way in CKAN.
+I was told to research on these topics and see how they could be integrated into the project.
+Today, I did research on croissant and my notes can be found [here](croissant_notes.md).
+I also created a sample gradio app that would work with the script to transfer a single dataset from the existing data commons to the CKAN deployment.

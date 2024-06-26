@@ -38,6 +38,7 @@ nav:
       - CKAN API Testing Scripts: ckan_api_testing_scripts.md
       - Discovery Environment API Testing Scripts: de_api_testing_scripts.md
       - Migration Script: migration_script.md
+      - Croissant Notes: croissant_notes.md
 
 # Configuration
 theme:
