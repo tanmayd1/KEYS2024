@@ -106,4 +106,4 @@ Make sure to include comments in the script to explain what each part of the cod
 **Response:**
 > *(Not Shown Here)*
 
-Can be found in the [CKAN API Testing Scripts](ckan_api_testing_scripts).
+Can be found in the [CKAN API Testing Scripts](ckan_api_testing_scripts.md).

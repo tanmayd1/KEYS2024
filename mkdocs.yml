@@ -39,6 +39,7 @@ nav:
       - Discovery Environment API Testing Scripts: de_api_testing_scripts.md
       - Migration Script: migration_script.md
       - Croissant Notes: croissant_notes.md
+      - BagIt Notes: bag_it_notes.md
 
 # Configuration
 theme:

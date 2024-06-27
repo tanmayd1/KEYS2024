@@ -185,3 +185,16 @@ Apart from this, we talked about Amazon buckets which would allow to store vast 
 I was told to research on these topics and see how they could be integrated into the project.
 Today, I did research on croissant and my notes can be found [here](croissant_notes.md).
 I also created a sample gradio app that would work with the script to transfer a single dataset from the existing data commons to the CKAN deployment.
+
+### Day 17 (6/26/24)
+
+In the morning we had the weekly science seminar where an alumni panel was held.
+We also learned about the KEYS slam which would be held the day before the research showcase.
+
+After the seminar, I found a research paper on croissant and read through it to get a better understanding of what croissant is.
+I added the notes from the research paper to my notes on croissant which can be found [here](croissant_notes.md).
+
+After this, I created an example workflow for how the gradio app would work with the script and croissant to transfer a dataset from the existing data commons to the CKAN deployment.
+
+Then, I researched BagIt which is a file packaging format that is used to store and transfer large amounts of data. 
+The notes from my research can be found [here](bag_it_notes.md).
