@@ -198,3 +198,10 @@ After this, I created an example workflow for how the gradio app would work with
 
 Then, I researched BagIt which is a file packaging format that is used to store and transfer large amounts of data. 
 The notes from my research can be found [here](bag_it_notes.md).
+
+### Day 18 (6/27/24)
+For the majority of today, I was working on integrating the gradio app with the script that I already had. 
+I added validation to the app that would make sure the user's credentials, organization, and dataset name were correct.
+I did some more research on the exact structure of croissant metadata by looking at [this google colab notebook](https://colab.research.google.com/github/mlcommons/croissant/blob/main/python/mlcroissant/recipes/introduction.ipynb#scrollTo=MHdVY4TBEqZ8) that gave an example of how to create a croissant metadata file.
+
+I also met with Dr. Merchant, Tony, and Larry Head who is a professor at the University of Arizona working on the DRIVEArizona project so that I could use his datasets to test my project.
