@@ -205,3 +205,11 @@ I added validation to the app that would make sure the user's credentials, organ
 I did some more research on the exact structure of croissant metadata by looking at [this google colab notebook](https://colab.research.google.com/github/mlcommons/croissant/blob/main/python/mlcroissant/recipes/introduction.ipynb#scrollTo=MHdVY4TBEqZ8) that gave an example of how to create a croissant metadata file.
 
 I also met with Dr. Merchant, Tony, and Larry Head who is a professor at the University of Arizona working on the DRIVEArizona project so that I could use his datasets to test my project.
+
+### Day 19 (6/28/24)
+
+Today, I was working on integrating croissant with the gradio interface. 
+I wanted the interface to be able to take in a DE path and then create a croissant metadata file for that path.
+If there was metadata that wasn't available in the DE path, the user would be able to input that metadata in the interface.
+However, I couldn't figure out how to add additional fields depending on what was missing.
+I asked ChatGPT for help but it wasn't able to give me a solution.
