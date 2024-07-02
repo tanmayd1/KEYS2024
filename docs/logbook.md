@@ -213,3 +213,15 @@ I wanted the interface to be able to take in a DE path and then create a croissa
 If there was metadata that wasn't available in the DE path, the user would be able to input that metadata in the interface.
 However, I couldn't figure out how to add additional fields depending on what was missing.
 I asked ChatGPT for help but it wasn't able to give me a solution.
+
+### Day 20 (7/1/24)
+
+Over the weekend, Dr. Merchant gave me a set of instructions to be working on which I will work on for the next few days.
+Today, I worked on the first step which was to create a parquet file using a file path in the Discovery Environment in a Jupyter notebook.
+While working on this, I encountered several errors and problems. 
+Firstly, I was having a hard time figuring out the API endpoint to get a file from the Discovery Environment.
+I asked ChatGPT for help and it was still not able to give me a solution.
+Eventually, I was able to figure out that I was using the wrong API endpoint and I was able to get the file from the Discovery Environment.
+Next, I was having trouble converting the csv file to a parquet file.
+The function that I was using was not storing the parquet file anywhere even though it was saying that it was.
+I asked ChatGPT for help and it provided a different function that stored the parquet file differently which worked.
