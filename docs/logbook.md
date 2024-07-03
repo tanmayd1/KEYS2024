@@ -225,3 +225,12 @@ Eventually, I was able to figure out that I was using the wrong API endpoint and
 Next, I was having trouble converting the csv file to a parquet file.
 The function that I was using was not storing the parquet file anywhere even though it was saying that it was.
 I asked ChatGPT for help and it provided a different function that stored the parquet file differently which worked.
+
+### Day 21 (7/2/24) 
+
+During the standup meeting today, I was told to try and create a VICE app that would have the croissant editor in it.
+I first ran the docker container from the croissant github repository locally which did work. 
+When I tried to create the VICE app, however, the app was not able to start.
+After asking Dr. Swetnam for help, he told me to hold off on the VICE app for now because we would need to create our own GitHub repository for it.
+
+Other than that, I worked on the Jupyter notebook from yesterday to add a functon which would combine all the csv files in a directory into a single parquet file by year.
