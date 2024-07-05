@@ -234,3 +234,12 @@ When I tried to create the VICE app, however, the app was not able to start.
 After asking Dr. Swetnam for help, he told me to hold off on the VICE app for now because we would need to create our own GitHub repository for it.
 
 Other than that, I worked on the Jupyter notebook from yesterday to add a functon which would combine all the csv files in a directory into a single parquet file by year.
+
+### Day 22 (7/3/24)
+
+Today, I was working on creating a python script to be able to generate a DCAT JSON LD file from a some sample metadata.
+After I finished this, I was working on another python script which would be able take in a DCAT JSON LD file and create a Croissant metadata file from it.
+However, I kept encountering errors when trying to do this. 
+One of the main errors is that the properties "md5" or "sha256" must be defined in the json file. 
+I asked ChatGPT for help but it wasn't able to give me a solution.
+I will continue working on this tomorrow.
