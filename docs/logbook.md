@@ -243,3 +243,21 @@ However, I kept encountering errors when trying to do this.
 One of the main errors is that the properties "md5" or "sha256" must be defined in the json file. 
 I asked ChatGPT for help but it wasn't able to give me a solution.
 I will continue working on this tomorrow.
+
+### Day 23 (7/5/24)
+
+I figured out the error that I was encountering yesterday with the "md5" and "sha256" properties.
+I was formatting the JSON file incorrectly so I fixed that and the error went away.
+I created another script to generate a Croissant metadata file from metadata.
+I started creating the gradio app from scratch because of all the errors I was getting previously. 
+I created 5 tabs in the app: 
+
+1. one to transfer a dataset from the DE to CKAN
+2. one to create a Croissant metadata file
+3. one to create a DCAT JSON LD file
+4. one to create a dataset in CKAN from a Croissant metadata file
+5. one to create a dataset in CKAN from a DCAT JSON LD file.
+
+I plan to add more tabs such as creating a parquet file from a csv file and creating a parquet file from a directory of csv files.
+The issue that I was running into was that I wanted the app to be dynamic so that when the user enters a DE link and presses submit, there should be more fields that appear depending on what metadata is missing.
+
