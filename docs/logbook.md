@@ -253,11 +253,18 @@ I started creating the gradio app from scratch because of all the errors I was g
 I created 5 tabs in the app: 
 
 1. one to transfer a dataset from the DE to CKAN
-2. one to create a Croissant metadata file
-3. one to create a DCAT JSON LD file
+2. one to create a Croissant metadata file from a DE link
+3. one to create a DCAT JSON LD file from a DE link
 4. one to create a dataset in CKAN from a Croissant metadata file
 5. one to create a dataset in CKAN from a DCAT JSON LD file.
 
 I plan to add more tabs such as creating a parquet file from a csv file and creating a parquet file from a directory of csv files.
-The issue that I was running into was that I wanted the app to be dynamic so that when the user enters a DE link and presses submit, there should be more fields that appear depending on what metadata is missing.
+The issue that I was running into was that I wanted the app to be dynamic so that when the user enters a DE link and presses submit (for the first three tabs), there should be more fields that appear depending on what metadata is missing.
+
+### Day 24 (7/8/24)
+
+I asked Tony Edgin for help on the gradio app and he told me that I can hide and show fields depending on what the user inputs.
+I was able to implement this for my tabs. 
+I also implemented the functionality where the app gives an error if the user inputs a DE link that doesn't exist, if the username/password is incorrect, or if the input fields were left blank.
+Other than that, I completed the first three tabs of the app.
 
