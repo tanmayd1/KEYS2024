@@ -266,5 +266,31 @@ The issue that I was running into was that I wanted the app to be dynamic so tha
 I asked Tony Edgin for help on the gradio app and he told me that I can hide and show fields depending on what the user inputs.
 I was able to implement this for my tabs. 
 I also implemented the functionality where the app gives an error if the user inputs a DE link that doesn't exist, if the username/password is incorrect, or if the input fields were left blank.
-Other than that, I completed the first three tabs of the app.
+Other than that, I simultaneously worked on the first three tabs of the app because they require very similar functions.
 
+### Day 25 (7/9/24)
+
+CyVerse was down for most of the day so I wasn't able to work that much on the first three tabs because I wasn't able to test them.
+I mainly worked on the last two tabs of the app where I created functions to extract the metadata from the Croissant metadata file and the DCAT JSON LD file.
+For the 2nd and 3rd tabs, I was trying to figure out how the user could download the Croissant metadata file and the DCAT JSON LD file respectively.
+After looking at the documentation and some github posts, I was able to figure out how to do this.
+After CyVerse was back up, I worked on the first three tabs and I was able to complete the second one. 
+The third tab should be similar to the second one so I will be able to complete that tomorrow.
+I'm encountering an error for the first tab though and there is a problem with migrating the datasets to CKAN.
+
+<div class="mermaid">
+flowchart TD
+    A[Front-End Website embeds chatbot in website via iFrame: .html, .js, .css]
+    B[Chatbot Server send/receive dialogue to/from user: .html, .js, .css]
+    C[Custom AI Assistant API: relevant files in vector store, GPT-4o]
+    D[Cron Job & Python Script daily process: download and process files to train, update vector store, delete old files]
+
+    A --> B
+    B --> C
+    C --> D
+</div>
+
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+mermaid.initialize({ startOnLoad: true });
+</script>
