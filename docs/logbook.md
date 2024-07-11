@@ -278,19 +278,40 @@ After CyVerse was back up, I worked on the first three tabs and I was able to co
 The third tab should be similar to the second one so I will be able to complete that tomorrow.
 I'm encountering an error for the first tab though and there is a problem with migrating the datasets to CKAN.
 
-<div class="mermaid">
-flowchart TD
-    A[Front-End Website embeds chatbot in website via iFrame: .html, .js, .css]
-    B[Chatbot Server send/receive dialogue to/from user: .html, .js, .css]
-    C[Custom AI Assistant API: relevant files in vector store, GPT-4o]
-    D[Cron Job & Python Script daily process: download and process files to train, update vector store, delete old files]
+### Day 26 (7/10/24)
 
-    A --> B
-    B --> C
-    C --> D
-</div>
+Today was the weekly science seminar where the guests gave lectures about undergraduate research as well as the University of Arizona's Honors College.
+We also discussed the KEYS slam which would be held the day before the research showcase as well as the research showcase itself.
+I had to submit my poster to my KEYS crew mentor today so I mainly worked on that for the rest of the day. 
+For the error from yesterday regarding the first tab, I realized that the error was because there was no name key when uploading data to CKAN.
+However, my python script should be creating a name key so I'm not exactly sure why it isn't.
 
-<script type="module">
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-mermaid.initialize({ startOnLoad: true });
-</script>
+[//]: # (<div class="mermaid">)
+
+[//]: # (flowchart TD)
+
+[//]: # (    A[Front-End Website embeds chatbot in website via iFrame: .html, .js, .css])
+
+[//]: # (    B[Chatbot Server send/receive dialogue to/from user: .html, .js, .css])
+
+[//]: # (    C[Custom AI Assistant API: relevant files in vector store, GPT-4o])
+
+[//]: # (    D[Cron Job & Python Script daily process: download and process files to train, update vector store, delete old files])
+
+[//]: # ()
+[//]: # (    A --> B)
+
+[//]: # (    B --> C)
+
+[//]: # (    C --> D)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (<script type="module">)
+
+[//]: # (import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';)
+
+[//]: # (mermaid.initialize&#40;{ startOnLoad: true }&#41;;)
+
+[//]: # (</script>)
