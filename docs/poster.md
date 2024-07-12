@@ -1,17 +1,3 @@
-# [Project Name Here]
+# Project Poster
 
-## Description:
-
-[Description of your Project Here]
-
-## Introduction
-
-[Introductino to your project here]
-
-## Methods
-
-[Methods for your project here]
-
-## Results 
-
-[Results for your project here]
+![Project Poster](assets/KEYS_Poster.jpg)

@@ -286,6 +286,14 @@ I had to submit my poster to my KEYS crew mentor today so I mainly worked on tha
 For the error from yesterday regarding the first tab, I realized that the error was because there was no name key when uploading data to CKAN.
 However, my python script should be creating a name key so I'm not exactly sure why it isn't.
 
+### Day 27 (7/11/24)
+
+Today, I mainly worked on my poster for the Research Showcase as well as the KEYS slam slides because I have to submit them tomorrow.
+Dr. Merchant, Dr. Swetnam, and Tony Edgin gave a lot of feedback for my rough draft which I incorporated into my final draft.
+I also met with Dr. Merchant and Tony Edgin to discuss what things to include in the poster and the slam slides.
+
+The poster can be found [here](poster.md).
+
 [//]: # (<div class="mermaid">)
 
 [//]: # (flowchart TD)
