@@ -294,32 +294,8 @@ I also met with Dr. Merchant and Tony Edgin to discuss what things to include in
 
 The poster can be found [here](poster.md).
 
-[//]: # (<div class="mermaid">)
+### Day 28 (7/12/24)
 
-[//]: # (flowchart TD)
-
-[//]: # (    A[Front-End Website embeds chatbot in website via iFrame: .html, .js, .css])
-
-[//]: # (    B[Chatbot Server send/receive dialogue to/from user: .html, .js, .css])
-
-[//]: # (    C[Custom AI Assistant API: relevant files in vector store, GPT-4o])
-
-[//]: # (    D[Cron Job & Python Script daily process: download and process files to train, update vector store, delete old files])
-
-[//]: # ()
-[//]: # (    A --> B)
-
-[//]: # (    B --> C)
-
-[//]: # (    C --> D)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (<script type="module">)
-
-[//]: # (import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';)
-
-[//]: # (mermaid.initialize&#40;{ startOnLoad: true }&#41;;)
-
-[//]: # (</script>)
+I finished basically all of my Gradio app today. I wasn't able to test it as much and I plan to do that on Monday and fix any errors that I encounter.
+I know that there could be some issues with DCAT JSON LD files and Parquet files especially because I didn't really get to test that code that much.
+I also did some finishing touches on my poster and slam slides and submitted them to Jordan Pilch.
