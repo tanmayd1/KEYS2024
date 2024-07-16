@@ -1,0 +1,5 @@
+# Assignment 3: Materials and Methods 
+
+In this project, I am developing a robust Python script to automate the migration of datasets from CyVerse’s Discovery Environment to the CKAN data management platform. This involves using the Discovery Environment API to retrieve dataset metadata (like creation dates, author, description, DOI identifier, etc) and the CKAN API to register these datasets within CKAN. This approach was chosen for its ability to seamlessly integrate these two systems and it made sure that datasets were accurately and efficiently transferred without manual intervention. The metadata that is being transferred is very important for maintaining the integrity and originality of datasets during migration. 
+
+The Python programming language was chosen for its versatility and the availability of robust libraries for handling HTTP requests and JSON data manipulation. The integration of these APIs and Python allows for automated and scheduled transfers, which reduces the risk of human error and ensures consistency in the dataset registration process.
