@@ -299,3 +299,13 @@ The poster can be found [here](poster.md).
 I finished basically all of my Gradio app today. I wasn't able to test it as much and I plan to do that on Monday and fix any errors that I encounter.
 I know that there could be some issues with DCAT JSON LD files and Parquet files especially because I didn't really get to test that code that much.
 I also did some finishing touches on my poster and slam slides and submitted them to Jordan Pilch.
+
+### Day 29 (7/15/24)
+
+CyVerse and CKAN were down for most of the day because of a power outage so I wasn't able to test my Gradio app that much.
+I mainly worked on writing comments and restructuring my code so that it is easier to read and understand.
+I encountered some errors while I was doing this but I fixed those.
+I also pushed my code to the [data commons GitHub repository](https://github.com/cyverse/data-commons).
+If CKAN is back up tomorrow, I will test my Gradio app and fix any errors that I encounter.
+
+I also added Devan Patel's (a fellow KEYS intern) chatbot to this website.
